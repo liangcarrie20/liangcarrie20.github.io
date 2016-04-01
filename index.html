@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome!</title>
+	<title>Welcome! | Seattle Great Wheel</title>
 </head>
 <body>
 	<h1>Seattle Great Wheel</h1>
 		<p>This website is about the Seattle Great Wheel.</p>
 		<img src="http://img.photobucket.com/albums/v99/iNTENSELY_FALLEN/Seattle/IMG_3633.jpg" alt="Seattle Great Wheel"/>
+		<p>In 2014, my friends and I visited Seattle.  One evening, we decided to take a stroll on the pier.  We saw the Seattle Great Wheel from a distance and walked toward it.</p>
+<form name=seattle method="post" action="https://httpbin.org/forms/post">
+<fieldset>
+<p>If you'd like to visit the Seattle Great Wheel, please enter your information below:</p>
+<div>
+	<label>Name (Full Name):</label>
+	<input type="text" name="fullname">
+	<label>Email:</label>
+	<input type="email" name="email">
+</div>
+</fieldset>
+
+<fieldset>
+<div>
+	<label>How will you be travelling?</label>
+	<select name="transportation">
+		<option value="plane">Airplane</option>
+		<option value="road">Car</option>
+		<option value="train">Train</option>
+	</select>
+</div>
+<div>
+	<label>When would you like to arrive?</label>
+	<input type="date" name="arrivedate">
+</div>
+<div>
+	<label>When would you like to leave></label>
+	<input type="date" name="leavedate">
+</div>
+</fieldset>
+
+<fieldset>
+<div>
+	<label>How many people will be travelling?</label>
+	<select name="numbertravelling">
+		<option value="one">1</option>
+		<option value="two">2</option>
+		<option value="three">3</option>
+		<option value="four">4</option>
+		<option value="five">5</option>
+		<option value="six">6</option>
+		<option value="sevenplus">7+</option>
+	</select>
+<div>
+	<label>Who will be travelling? (Check all that apply)</label>
+	<label><input type="checkbox" name="persons" value="Adults">Adult(s)</label>
+	<label><input type="checkbox" name="persons" value="Children">Child(ren)</label>
+	<label><input type="checkbox" name="persons" value="Seniors">Senior(s)</label>
+	<label><input type="checkbox" name="persons" value="Toddlers">Toddler(s)</label>
+</div>
+</fieldset>
+
+<fieldset>
+<div>
+	<label>Additional information:<textarea name="comments"></textarea></label>
+</div>
+</fieldset>
+
+<fieldset>
+<div>
+	<iput type="checkbox" name="go" value="agree">
+	Take me to Seattle!
+</div>
+</fieldset>
+<button type="submit">Submit</button>
+</form>
 </body>
 </html>
