@@ -5,11 +5,14 @@ body {
 	background-position: left bottom;
 	font-family: Helvetica;
 	font-size: 12px;
+	max-width: 960px;
+	margin: auto;
 }
 
 h1 {
 	font-size: 68px;
 	font-family: cursive;
+	z-index: 100;
 }
 
 #description {
@@ -18,10 +21,21 @@ h1 {
 	margin-top: -70px;
 	margin-left: 300px;
 	color: #33CCFF;
+	z-index: 90;
 }
 
-#story {
-	float: left;
+#main {
+	width: 75%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 5px;
+}
+
+#photolink {
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 5px;
 }
 
 img {
