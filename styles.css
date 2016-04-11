@@ -1,5 +1,5 @@
 body {
-	background-image:  url(http://www.clker.com/cliparts/Q/R/M/g/x/p/ferris-wheel-silhouette-hi.png);
+	background-image:  url(https://www.colourbox.com/preview/4754360-outline-of-a-large-ferris-wheel.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: left bottom;
@@ -13,6 +13,7 @@ h1 {
 	font-size: 68px;
 	font-family: cursive;
 	z-index: 100;
+	background-color: white;
 }
 
 #description {
@@ -20,7 +21,6 @@ h1 {
 	font-size: 13px;
 	margin-top: -70px;
 	margin-left: 300px;
-	color: #33CCFF;
 	z-index: 90;
 }
 
@@ -29,6 +29,8 @@ h1 {
 	display: inline-block;
 	vertical-align: top;
 	padding-left: 5px;
+	border: 1px solid;
+	background-color: white;
 }
 
 #photolink {
@@ -36,11 +38,19 @@ h1 {
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 5px;
+	border: 1px solid;
 }
 
 img {
 	box-shadow: 10px 10px 5px #FFFFFF;
 	float: right;
+	border-radius: 8px;
+	margin: 10px;
+}
+
+a img {
+	height:300px;
+	width: 200px;
 }
 
 #greatwheel {
@@ -51,4 +61,46 @@ img {
 #view {
 	height: 300px;
 	width: 200px;
+	float: left;
+}
+
+a:visited {
+	color: green;
+}
+
+fieldset {
+	border-color: black;
+}
+
+form {
+	margin: 10px;
+}
+
+table {
+	border: 1px black solid;
+}
+
+button {
+	float: right;
+}
+
+textarea {
+	width: 100%;
+}
+
+footer {
+	position: center;
+	height: 50px;
+	clear: both;
+	text-align: center;
+	background-color: white;
+	border: 1px solid;
+	width: 100%;
+	float: right;
+}
+
+@media screen and (max-width: 730px) {
+	h1 {
+		font-size: 38px;
+	}
 }
